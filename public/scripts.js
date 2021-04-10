@@ -30,6 +30,7 @@ async function windowActions() {
   console.log(selectedMeals[0].meal_name)
   console.log(selectedMeals[0].calories)
 
+  // dining halls table
   datas.forEach((item) => {
 
     const appendItem = document.createElement('tr');
@@ -48,12 +49,12 @@ async function windowActions() {
     title:{
       text: "Meals Macros"
     },
-    axisX: {
-      valueFormatString: ""
-    },
-    axisY: {
-      // prefix: "$"
-    },
+    // axisX: {
+    //   valueFormatString: ""
+    // },
+    // axisY: {
+    //   prefix: "$"
+    // },
     toolTip: {
       shared: true
     },
@@ -68,16 +69,16 @@ async function windowActions() {
       xValueFormatString: "",
       yValueFormatString: "#",
       dataPoints: [
-        { x: selectedMeals[0].meal_name, y: selectedMeals[0].calories },
-        { x: selectedMeals[1].meal_name, y: selectedMeals[1].calories },
-        { x: selectedMeals[2].meal_name, y: selectedMeals[2].calories },
-        { x: selectedMeals[3].meal_name, y: selectedMeals[3].calories },
-        { x: selectedMeals[4].meal_name, y: selectedMeals[4].calories },
-        { x: selectedMeals[5].meal_name, y: selectedMeals[5].calories },
-        { x: selectedMeals[6].meal_name, y: selectedMeals[6].calories },
-        { x: selectedMeals[7].meal_name, y: selectedMeals[7].calories },
-        { x: selectedMeals[8].meal_name, y: selectedMeals[8].calories },
-        { x: selectedMeals[9].meal_name, y: selectedMeals[9].calories }
+        { label: selectedMeals[0].meal_name, y: selectedMeals[0].calories },
+        { label: selectedMeals[1].meal_name, y: selectedMeals[1].calories },
+        { label: selectedMeals[2].meal_name, y: selectedMeals[2].calories },
+        { label: selectedMeals[3].meal_name, y: selectedMeals[3].calories },
+        { label: selectedMeals[4].meal_name, y: selectedMeals[4].calories },
+        { label: selectedMeals[5].meal_name, y: selectedMeals[5].calories },
+        { label: selectedMeals[6].meal_name, y: selectedMeals[6].calories },
+        { label: selectedMeals[7].meal_name, y: selectedMeals[7].calories },
+        { label: selectedMeals[8].meal_name, y: selectedMeals[8].calories },
+        { label: selectedMeals[9].meal_name, y: selectedMeals[9].calories }
       ]
     },
     {
@@ -87,16 +88,16 @@ async function windowActions() {
       xValueFormatString: "",
       yValueFormatString: "#",
       dataPoints: [
-        { x: selectedMeals[0].meal_name, y: selectedMeals[0].serving_size },
-        { x: selectedMeals[1].meal_name, y: selectedMeals[1].serving_size },
-        { x: selectedMeals[2].meal_name, y: selectedMeals[2].serving_size },
-        { x: selectedMeals[3].meal_name, y: selectedMeals[3].serving_size },
-        { x: selectedMeals[4].meal_name, y: selectedMeals[4].serving_size },
-        { x: selectedMeals[5].meal_name, y: selectedMeals[5].serving_size },
-        { x: selectedMeals[6].meal_name, y: selectedMeals[6].serving_size },
-        { x: selectedMeals[7].meal_name, y: selectedMeals[7].serving_size },
-        { x: selectedMeals[8].meal_name, y: selectedMeals[8].serving_size },
-        { x: selectedMeals[9].meal_name, y: selectedMeals[9].serving_size }
+        { label: selectedMeals[0].meal_name, y: selectedMeals[0].serving_size },
+        { label: selectedMeals[1].meal_name, y: selectedMeals[1].serving_size },
+        { label: selectedMeals[2].meal_name, y: selectedMeals[2].serving_size },
+        { label: selectedMeals[3].meal_name, y: selectedMeals[3].serving_size },
+        { label: selectedMeals[4].meal_name, y: selectedMeals[4].serving_size },
+        { label: selectedMeals[5].meal_name, y: selectedMeals[5].serving_size },
+        { label: selectedMeals[6].meal_name, y: selectedMeals[6].serving_size },
+        { label: selectedMeals[7].meal_name, y: selectedMeals[7].serving_size },
+        { label: selectedMeals[8].meal_name, y: selectedMeals[8].serving_size },
+        { label: selectedMeals[9].meal_name, y: selectedMeals[9].serving_size }
       ]
     },
     {
@@ -106,16 +107,16 @@ async function windowActions() {
       xValueFormatString: "",
       yValueFormatString: "#",
       dataPoints: [
-        { x: selectedMeals[0].meal_name, y: selectedMeals[0].cholesterol },
-        { x: selectedMeals[1].meal_name, y: selectedMeals[1].cholesterol },
-        { x: selectedMeals[2].meal_name, y: selectedMeals[2].cholesterol },
-        { x: selectedMeals[3].meal_name, y: selectedMeals[3].cholesterol },
-        { x: selectedMeals[4].meal_name, y: selectedMeals[4].cholesterol },
-        { x: selectedMeals[5].meal_name, y: selectedMeals[5].cholesterol },
-        { x: selectedMeals[6].meal_name, y: selectedMeals[6].cholesterol },
-        { x: selectedMeals[7].meal_name, y: selectedMeals[7].cholesterol },
-        { x: selectedMeals[8].meal_name, y: selectedMeals[8].cholesterol },
-        { x: selectedMeals[9].meal_name, y: selectedMeals[9].cholesterol }
+        { label: selectedMeals[0].meal_name, y: selectedMeals[0].cholesterol },
+        { label: selectedMeals[1].meal_name, y: selectedMeals[1].cholesterol },
+        { label: selectedMeals[2].meal_name, y: selectedMeals[2].cholesterol },
+        { label: selectedMeals[3].meal_name, y: selectedMeals[3].cholesterol },
+        { label: selectedMeals[4].meal_name, y: selectedMeals[4].cholesterol },
+        { label: selectedMeals[5].meal_name, y: selectedMeals[5].cholesterol },
+        { label: selectedMeals[6].meal_name, y: selectedMeals[6].cholesterol },
+        { label: selectedMeals[7].meal_name, y: selectedMeals[7].cholesterol },
+        { label: selectedMeals[8].meal_name, y: selectedMeals[8].cholesterol },
+        { label: selectedMeals[9].meal_name, y: selectedMeals[9].cholesterol }
       ]
     },
     {
@@ -125,16 +126,16 @@ async function windowActions() {
       xValueFormatString: "",
       yValueFormatString: "#",
       dataPoints: [
-        { x: selectedMeals[0].meal_name, y: selectedMeals[0].sodium },
-        { x: selectedMeals[1].meal_name, y: selectedMeals[1].sodium },
-        { x: selectedMeals[2].meal_name, y: selectedMeals[2].sodium },
-        { x: selectedMeals[3].meal_name, y: selectedMeals[3].sodium },
-        { x: selectedMeals[4].meal_name, y: selectedMeals[4].sodium },
-        { x: selectedMeals[5].meal_name, y: selectedMeals[5].sodium },
-        { x: selectedMeals[6].meal_name, y: selectedMeals[6].sodium },
-        { x: selectedMeals[7].meal_name, y: selectedMeals[7].sodium },
-        { x: selectedMeals[8].meal_name, y: selectedMeals[8].sodium },
-        { x: selectedMeals[9].meal_name, y: selectedMeals[9].sodium }
+        { label: selectedMeals[0].meal_name, y: selectedMeals[0].sodium },
+        { label: selectedMeals[1].meal_name, y: selectedMeals[1].sodium },
+        { label: selectedMeals[2].meal_name, y: selectedMeals[2].sodium },
+        { label: selectedMeals[3].meal_name, y: selectedMeals[3].sodium },
+        { label: selectedMeals[4].meal_name, y: selectedMeals[4].sodium },
+        { label: selectedMeals[5].meal_name, y: selectedMeals[5].sodium },
+        { label: selectedMeals[6].meal_name, y: selectedMeals[6].sodium },
+        { label: selectedMeals[7].meal_name, y: selectedMeals[7].sodium },
+        { label: selectedMeals[8].meal_name, y: selectedMeals[8].sodium },
+        { label: selectedMeals[9].meal_name, y: selectedMeals[9].sodium }
       ]
     },
     {
@@ -144,16 +145,16 @@ async function windowActions() {
       xValueFormatString: "",
       yValueFormatString: "#",
       dataPoints: [
-        { x: selectedMeals[0].meal_name, y: selectedMeals[0].carbs },
-        { x: selectedMeals[1].meal_name, y: selectedMeals[1].carbs },
-        { x: selectedMeals[2].meal_name, y: selectedMeals[2].carbs },
-        { x: selectedMeals[3].meal_name, y: selectedMeals[3].carbs },
-        { x: selectedMeals[4].meal_name, y: selectedMeals[4].carbs },
-        { x: selectedMeals[5].meal_name, y: selectedMeals[5].carbs },
-        { x: selectedMeals[6].meal_name, y: selectedMeals[6].carbs },
-        { x: selectedMeals[7].meal_name, y: selectedMeals[7].carbs },
-        { x: selectedMeals[8].meal_name, y: selectedMeals[8].carbs },
-        { x: selectedMeals[9].meal_name, y: selectedMeals[9].carbs }
+        { label: selectedMeals[0].meal_name, y: selectedMeals[0].carbs },
+        { label: selectedMeals[1].meal_name, y: selectedMeals[1].carbs },
+        { label: selectedMeals[2].meal_name, y: selectedMeals[2].carbs },
+        { label: selectedMeals[3].meal_name, y: selectedMeals[3].carbs },
+        { label: selectedMeals[4].meal_name, y: selectedMeals[4].carbs },
+        { label: selectedMeals[5].meal_name, y: selectedMeals[5].carbs },
+        { label: selectedMeals[6].meal_name, y: selectedMeals[6].carbs },
+        { label: selectedMeals[7].meal_name, y: selectedMeals[7].carbs },
+        { label: selectedMeals[8].meal_name, y: selectedMeals[8].carbs },
+        { label: selectedMeals[9].meal_name, y: selectedMeals[9].carbs }
         // { x: new Date(2017, 0, 30), y: selectedMeals[0].carbs },
         // { x: new Date(2017, 0, 31), y: selectedMeals[1].carbs  },
         // { x: new Date(2017, 1, 1), y: selectedMeals[2].carbs  },
@@ -170,23 +171,16 @@ async function windowActions() {
       xValueFormatString: "",
       yValueFormatString: "#",
       dataPoints: [
-        { x: selectedMeals[0].meal_name, y: selectedMeals[0].protein },
-        { x: selectedMeals[1].meal_name, y: selectedMeals[1].protein },
-        { x: selectedMeals[2].meal_name, y: selectedMeals[2].protein },
-        { x: selectedMeals[3].meal_name, y: selectedMeals[3].protein },
-        { x: selectedMeals[4].meal_name, y: selectedMeals[4].protein },
-        { x: selectedMeals[5].meal_name, y: selectedMeals[5].protein },
-        { x: selectedMeals[6].meal_name, y: selectedMeals[6].protein },
-        { x: selectedMeals[7].meal_name, y: selectedMeals[7].protein },
-        { x: selectedMeals[8].meal_name, y: selectedMeals[8].protein },
-        { x: selectedMeals[9].meal_name, y: selectedMeals[9].protein }
-        // { x: new Date(2017, 0, 30), y: 48 },
-        // { x: new Date(2017, 0, 31), y: 45 },
-        // { x: new Date(2017, 1, 1), y: 41 },
-        // { x: new Date(2017, 1, 2), y: 55 },
-        // { x: new Date(2017, 1, 3), y: 80 },
-        // { x: new Date(2017, 1, 4), y: 85 },
-        // { x: new Date(2017, 1, 5), y: 83 }
+        { label: selectedMeals[0].meal_name, y: selectedMeals[0].protein },
+        { label: selectedMeals[1].meal_name, y: selectedMeals[1].protein },
+        { label: selectedMeals[2].meal_name, y: selectedMeals[2].protein },
+        { label: selectedMeals[3].meal_name, y: selectedMeals[3].protein },
+        { label: selectedMeals[4].meal_name, y: selectedMeals[4].protein },
+        { label: selectedMeals[5].meal_name, y: selectedMeals[5].protein },
+        { label: selectedMeals[6].meal_name, y: selectedMeals[6].protein },
+        { label: selectedMeals[7].meal_name, y: selectedMeals[7].protein },
+        { label: selectedMeals[8].meal_name, y: selectedMeals[8].protein },
+        { label: selectedMeals[9].meal_name, y: selectedMeals[9].protein }
       ]
     },
     {
@@ -196,23 +190,16 @@ async function windowActions() {
       xValueFormatString: "",
       yValueFormatString: "#",
       dataPoints: [
-        { x: selectedMeals[0].meal_name, y: selectedMeals[0].fat },
-        { x: selectedMeals[1].meal_name, y: selectedMeals[1].fat },
-        { x: selectedMeals[2].meal_name, y: selectedMeals[2].fat },
-        { x: selectedMeals[3].meal_name, y: selectedMeals[3].fat },
-        { x: selectedMeals[4].meal_name, y: selectedMeals[4].fat },
-        { x: selectedMeals[5].meal_name, y: selectedMeals[5].fat },
-        { x: selectedMeals[6].meal_name, y: selectedMeals[6].fat },
-        { x: selectedMeals[7].meal_name, y: selectedMeals[7].fat },
-        { x: selectedMeals[8].meal_name, y: selectedMeals[8].fat },
-        { x: selectedMeals[9].meal_name, y: selectedMeals[9].fat }
-        // { x: new Date(2017, 0, 30), y: selectedMeals[0].fat },
-        // { x: new Date(2017, 0, 31), y: 45 },
-        // { x: new Date(2017, 1, 1), y: 41 },
-        // { x: new Date(2017, 1, 2), y: 55 },
-        // { x: new Date(2017, 1, 3), y: 80 },
-        // { x: new Date(2017, 1, 4), y: 85 },
-        // { x: new Date(2017, 1, 5), y: 83 }
+        { label: selectedMeals[0].meal_name, y: selectedMeals[0].fat },
+        { label: selectedMeals[1].meal_name, y: selectedMeals[1].fat },
+        { label: selectedMeals[2].meal_name, y: selectedMeals[2].fat },
+        { label: selectedMeals[3].meal_name, y: selectedMeals[3].fat },
+        { label: selectedMeals[4].meal_name, y: selectedMeals[4].fat },
+        { label: selectedMeals[5].meal_name, y: selectedMeals[5].fat },
+        { label: selectedMeals[6].meal_name, y: selectedMeals[6].fat },
+        { label: selectedMeals[7].meal_name, y: selectedMeals[7].fat },
+        { label: selectedMeals[8].meal_name, y: selectedMeals[8].fat },
+        { label: selectedMeals[9].meal_name, y: selectedMeals[9].fat }
       ]
     }]
   });
