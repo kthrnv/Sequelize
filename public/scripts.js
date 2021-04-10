@@ -155,13 +155,6 @@ async function windowActions() {
         { label: selectedMeals[7].meal_name, y: selectedMeals[7].carbs },
         { label: selectedMeals[8].meal_name, y: selectedMeals[8].carbs },
         { label: selectedMeals[9].meal_name, y: selectedMeals[9].carbs }
-        // { x: new Date(2017, 0, 30), y: selectedMeals[0].carbs },
-        // { x: new Date(2017, 0, 31), y: selectedMeals[1].carbs  },
-        // { x: new Date(2017, 1, 1), y: selectedMeals[2].carbs  },
-        // { x: new Date(2017, 1, 2), y: selectedMeals[3].carbs  },
-        // { x: new Date(2017, 1, 3), y: selectedMeals[4].carbs  },
-        // { x: new Date(2017, 1, 4), y: selectedMeals[5].carbs  },
-        // { x: new Date(2017, 1, 5), y: selectedMeals[6].carbs  }
       ]
     },
     {
