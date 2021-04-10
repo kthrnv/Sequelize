@@ -10,3 +10,8 @@ table {
 .title {
     text-align: center;
 }
+
+#chartContainer {
+    height: 370px;
+    width: 100%;
+}
